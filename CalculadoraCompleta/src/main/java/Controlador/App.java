@@ -5,19 +5,29 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-
+import java.util.Objects;
 
 
 public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
+
+        try {
+            Image icono = new Image(getClass().getResourceAsStream("/iconos/icono.png"));
+            stage.getIcons().add(icono);
+        } catch (Exception e) {
+            System.err.println("Error al cargar el icono: " + e.getMessage());
+        }
+
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(App.class.getResource("/Vista/calc.fxml"));
         Pane rootPane = (Pane) loader.load();
+
 
         Scene scene = new Scene(rootPane, 600, 500);
         stage.setResizable(true);
