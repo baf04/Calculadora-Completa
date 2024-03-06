@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="VBoxPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="543.0" prefWidth="603.0" stylesheets="@StyleCalc.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.ControladorTemperatura">
+   <children>
+      <ToolBar prefHeight="40.0" prefWidth="200.0">
+        <items>
+          <Button mnemonicParsing="false" onAction="#clickBasica" styleClass="buttonType" text="Basica" />
+            <Button mnemonicParsing="false" onAction="#clickCientifica" styleClass="buttonType" text="Cientifica" />
+            <Button fx:id="monetaria" mnemonicParsing="false" onAction="#clickConversionMonetaria" styleClass="buttonBorrar" text="Monetaria" />
+            <Button fx:id="Peso" mnemonicParsing="false" onAction="#clickConversionPeso" styleClass="buttonMemoria" text="Peso" />
+            <Button fx:id="temperatura" mnemonicParsing="false" onAction="#clickConversionTemperatura" styleClass="buttonUtility" text="Temperatura" />
+        </items>
+      </ToolBar>
+      <TextField fx:id="resultado" alignment="CENTER_RIGHT" editable="false" prefHeight="74.0" prefWidth="603.0" styleClass="VBox" text="0">
+         <opaqueInsets>
+            <Insets right="5.0" />
+         </opaqueInsets>
+         <font>
+            <Font size="48.0" />
+         </font>
+      </TextField>
+      <GridPane minHeight="356.0" minWidth="400.0" prefHeight="700.0" prefWidth="700.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" percentWidth="25.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" percentWidth="25.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" percentWidth="25.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" percentWidth="25.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" percentHeight="30.0" prefHeight="30.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="10.0" percentHeight="30.0" prefHeight="30.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="10.0" percentHeight="30.0" prefHeight="30.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="10.0" percentHeight="30.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" percentHeight="30.0" prefHeight="30.0" vgrow="ALWAYS" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="cinco" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickCinco" prefHeight="83.0" prefWidth="209.0" styleClass="buttonNumber" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="cuatro" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickCuatro" prefHeight="83.0" prefWidth="209.0" styleClass="buttonNumber" text="4" GridPane.rowIndex="2">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="uno" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickUno" prefHeight="83.0" prefWidth="209.0" styleClass="buttonNumber" text="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="dos" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickDos" prefHeight="83.0" prefWidth="209.0" styleClass="buttonNumber" text="2" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="tres" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickTres" prefHeight="83.0" prefWidth="209.0" styleClass="buttonNumber" text="3" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="seis" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickSeis" prefHeight="83.0" prefWidth="209.0" styleClass="buttonNumber" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="siete" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickSiete" prefHeight="83.0" prefWidth="209.0" styleClass="buttonNumber" text="7" GridPane.rowIndex="3">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="ocho" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickOcho" prefHeight="83.0" prefWidth="209.0" styleClass="buttonNumber" text="8" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="nueve" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickNueve" prefHeight="83.0" prefWidth="209.0" styleClass="buttonNumber" text="9" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="borrar" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickBorrar" prefHeight="83.0" prefWidth="209.0" styleClass="buttonBorrar" text="C" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="decimal" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickDecimal" prefHeight="83.0" prefWidth="209.0" styleClass="buttonUtility" text="." GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="cero" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickCero" prefHeight="83.0" prefWidth="209.0" styleClass="buttonNumber" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="igual" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickIgual" prefHeight="83.0" prefWidth="209.0" styleClass="buttonMemoria" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </Button>
+            <ComboBox fx:id="conversionInicial" prefWidth="150.0" promptText="convertir" styleClass="buttonNumber" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </ComboBox>
+            <ComboBox fx:id="conversionFinal" prefWidth="150.0" promptText="conversion" styleClass="buttonNumber" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </ComboBox>
+         </children>
+      </GridPane>
+   </children>
+</VBox>

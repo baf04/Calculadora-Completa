@@ -1,0 +1,47 @@
+* {
+    -fx-background-color: #DABFFF;
+  }
+
+.VBox{
+    -fx-background-color: #DABFFF;
+    -fx-padding: 5;
+}
+
+
+.buttonUtility {
+    -fx-background-color: #907AD6;
+    -fx-border-color: #907AD6;
+    -fx-border-width: 2px;
+}
+
+.buttonNumber {
+    -fx-background-color: #DABFFF;
+    -fx-border-color: #907AD6;
+    -fx-border-width: 2px;
+
+}
+
+.buttonType {
+    -fx-background-color: #DABFFF;
+
+}
+
+.buttonBorrar {
+    -fx-background-color: #F8D57E;
+
+    -fx-border-width: 2px;
+
+}
+
+.buttonMemoria {
+    -fx-background-color: #A63D40;
+
+    -fx-border-width: 2px;
+
+}
+
+.buttonMemoria:hover,.buttonBorrar:hover,.buttonUtility:hover,.buttonNumber:hover,.buttonType:hover {
+    -fx-border-color: #131313;
+}
+
+
