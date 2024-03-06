@@ -1,0 +1,4 @@
+tittle: Calculadora Completa
+lang: es
+description: Una Calculadora Basica y cientifica con opciones de convercion monetataria por medio de una API, asi como conversiones de peso y temperatura
+remote_theme: pages-themes/midnight@v0.2.0
