@@ -21,7 +21,7 @@ Se añaden funciones trigonometricas y exponenciales
 Se añade una funcion para convertir divisas de diferentes paises por medio de una API
 
 <p align="center">
-    <img src="Media/conversion.png" alt="Imagen modo simple">
+    <img src="Media/convercion.png" alt="Imagen modo simple">
 </p>
 
 ## Calculadora de Conversion Unitaria
