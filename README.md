@@ -1,2 +1,3 @@
 # Calculadora-Completa
- Calculadora Basica, Cientifica y de Conversion de unidades Hecha con JavaFX
+Una Calculadora Basica y cientifica con opciones de convercion monetataria por medio de una API, asi como conversiones de peso y temperatura
+
